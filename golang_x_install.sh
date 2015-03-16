@@ -1,13 +1,13 @@
 #!/bin/bash
 
 if [ ! -d $GOPATH ]; then
-  echo "GOPATH is net set. exit"
+  echo "GOPATH is not set. exit"
   exit
 fi
 
 GOXPATH=$GOPATH/src/golang.org/x
 
-if [ ! $GOXPATH]; then
+if [ ! $GOXPATH ]; then
   mkdir -p $GOXPATH
 fi
 
